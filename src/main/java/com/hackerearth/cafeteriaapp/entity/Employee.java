@@ -19,8 +19,11 @@ import java.sql.Timestamp;
 @Table(name = "emp_registration")
 public class Employee {
     @Id
+    @Column(name = "registration_id")
+    private String registrationId;
+
     @Column(name = "emp_id")
-    private int empId;
+    private String empId;
 
     @Column(name = "org_name")
     private String orgName;
@@ -34,9 +37,8 @@ public class Employee {
     @Column(name = "id_path")
     private String idPath;
 
-    @Column(name = "registration_id")
-    private String registrationId;
-
     @Column(name = "registration_date")
     private Timestamp registrationDate;
+
+    private String password;
 }

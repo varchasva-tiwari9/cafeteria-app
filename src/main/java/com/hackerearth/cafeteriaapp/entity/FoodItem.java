@@ -17,14 +17,17 @@ public class FoodItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "item_id")
-    private int itemId;
+    private Integer itemId;
+
+    @Column(name = "item_name")
+    private String itemName;
 
     @Column(name = "item_path")
     private String itemPath;
 
     @Column(name = "price")
-    private double price;
+    private Double price;
 
     @Column(name = "is_available")
-    private boolean isAvailable;
+    private Boolean isAvailable;
 }
