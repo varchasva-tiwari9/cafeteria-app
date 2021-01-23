@@ -1,10 +1,10 @@
 package com.hackerearth.cafeteriaapp.exception;
 
 import com.hackerearth.cafeteriaapp.model.CafeteriaException;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class CafeteriaExceptionHandler {
     @ExceptionHandler
     public Exception getDefaultException(Exception exception) {

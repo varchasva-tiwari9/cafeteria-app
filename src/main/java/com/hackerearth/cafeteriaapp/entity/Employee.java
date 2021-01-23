@@ -39,6 +39,4 @@ public class Employee {
 
     @Column(name = "registration_date")
     private Timestamp registrationDate;
-
-    private String password;
 }
