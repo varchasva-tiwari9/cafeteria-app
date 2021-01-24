@@ -14,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.net.URL;
 
 @RestController
+@CrossOrigin
 public class RegistrationController {
     @Autowired
     private RegistrationService registrationService;

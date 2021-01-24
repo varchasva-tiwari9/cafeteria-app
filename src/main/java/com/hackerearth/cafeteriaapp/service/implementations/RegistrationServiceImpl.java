@@ -23,7 +23,6 @@ public class RegistrationServiceImpl implements RegistrationService {
                 + "" + currentDateTime.getSecond();
         employee.setRegistrationId(regId);
         employee.setRegistrationDate(Timestamp.valueOf(currentDateTime));
-        employee.setIdPath("www.google.com");
         employee.setIdPath(url.toString());
 
         registrationRepository.save(employee);
